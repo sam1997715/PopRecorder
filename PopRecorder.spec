@@ -3,8 +3,8 @@
 block_cipher = None
 
 
-a = Analysis(['poprecorder.py'],
-             pathex=['C:\\Users\\sam19\\Desktop\\人流紀錄'],
+a = Analysis(['PopRecorder.py'],
+             pathex=['D:\\github\\PopRecorder'],
              binaries=[],
              datas=[],
              hiddenimports=[],
@@ -21,12 +21,12 @@ exe = EXE(pyz,
           a.scripts,
           [],
           exclude_binaries=True,
-          name='poprecorder',
+          name='PopRecorder',
           debug=False,
           bootloader_ignore_signals=False,
           strip=False,
           upx=True,
-          console=True )
+          console=False )
 coll = COLLECT(exe,
                a.binaries,
                a.zipfiles,
@@ -34,4 +34,4 @@ coll = COLLECT(exe,
                strip=False,
                upx=True,
                upx_exclude=[],
-               name='poprecorder')
+               name='PopRecorder')
