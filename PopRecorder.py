@@ -1,8 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
 import datetime
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
 
 time = datetime.datetime.now().strftime("%Y/%m/%d %H:%M:%S ")
 fileNameTime = datetime.datetime.now().strftime("%Y.%m.%d")
